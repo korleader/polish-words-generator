@@ -18,6 +18,7 @@ namespace korleader;
 class PolishGenerator
 {
     /**
+     * Array with words to generate
      * @var array
      */
     public $words = [
@@ -56,26 +57,31 @@ class PolishGenerator
     ];
 
     /**
+     * Minimum number of words in a sentence
      * @var int
      */
     public $minWordsInSentence = 10;
 
     /**
+     * Maximum number of words in a sentence
      * @var int
      */
     public $maxWordsInSentence = 15;
 
     /**
+     * Minimum number of sentences in the paragraph
      * @var int
      */
     public $minSentencesInParagraph = 5;
 
     /**
+     * Maximum number of sentences in the paragraph
      * @var int
      */
     public $maxSentencesInParagraph = 10;
 
     /**
+     * The HTML tag used for paragraphs
      * @var string
      */
     public $paragraphTag = 'p';
@@ -101,8 +107,10 @@ class PolishGenerator
     }
 
     /**
-     * @param int $min
-     * @param int $max
+     * Set number of words to generate in sentence
+     *
+     * @param int $min Minimum number of words in a sentence
+     * @param int $max Maximum number of words in a sentence
      */
     public function setSentenceWordsCount($min, $max = null)
     {
@@ -111,8 +119,10 @@ class PolishGenerator
     }
 
     /**
-     * @param int $min
-     * @param int $max
+     * Set number of sentences to generate in paragraph
+     *
+     * @param int $min Minimum number of sentences in the paragraph
+     * @param int $max Maximum number of sentences in the paragraph
      */
     public function setParagraphSentencesCount($min, $max = null)
     {
