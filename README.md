@@ -7,7 +7,7 @@ Polish words generator
 The preferred installation method is via `composer`. First use the require command, just run:
 
 ```bash
-composer require korleader/polish-words-generator
+composer require korleader/polish-words-generator dev-master
 ```
 
 Then run `composer update`
